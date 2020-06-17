@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AhoUtils.MainPage"
+             BackgroundColor="Black">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label 
+            Text="Aho's Utils App" 
+            TextColor="White" 
+            HorizontalTextAlignment="Center" 
+            FontSize="Large" 
+        />
+        <Button 
+            x:Name="ClickCounterButtonMainPage"
+            Text="Click Counter" 
+            BackgroundColor="LightBlue" 
+            Margin="10"
+            Clicked="ClickCounterButtonMainPage_Clicked"
+        />
+        <Button 
+            Text="Hex Converter" 
+            BackgroundColor="LightBlue" 
+            Margin="10" 
+        />
+        <Button 
+            Text="String Sorter" 
+            BackgroundColor="LightBlue" 
+            Margin="10" 
+        />
+    </StackLayout>
+
+</ContentPage>
