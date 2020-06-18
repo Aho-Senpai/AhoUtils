@@ -17,12 +17,19 @@ namespace AhoUtils
         {
             InitializeComponent();
             ClickCounterButtonMainPage.Clicked += ClickCounterButtonMainPage_Clicked;
+            HexConverterButtonMainPage.Clicked += HexConverterButtonMainPage_Clicked;
         }
+
 
         async void ClickCounterButtonMainPage_Clicked(object sender, EventArgs e)
         {
             var CCPage = new ClickCounterPage();
             await Navigation.PushModalAsync(CCPage);
+        }
+        async void HexConverterButtonMainPage_Clicked(object sender, EventArgs e)
+        {
+            var HCPage = new HexConverterPage();
+            await Navigation.PushModalAsync(HCPage);
         }
     }
 }
