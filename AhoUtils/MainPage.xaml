@@ -20,14 +20,12 @@
             Text="Click Counter" 
             BackgroundColor="LightBlue" 
             Margin="10"
-            Clicked="ClickCounterButtonMainPage_Clicked"
         />
         <Button 
             x:Name="HexConverterButtonMainPage"
             Text="Hex Converter" 
             BackgroundColor="LightBlue" 
             Margin="10" 
-            Clicked="HexConverterButtonMainPage_Clicked"
         />
         <Button 
             Text="String Sorter" 

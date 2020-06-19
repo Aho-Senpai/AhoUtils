@@ -1,28 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
-             x:Class="AhoUtils.HexConverterPage"
-             BackgroundColor="Black">
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    x:Class="AhoUtils.HexConverterPage"
+    BackgroundColor="Black"
+>
     
     <ContentPage.Content>
 
         <Grid Margin="5,5,5,5">
+            
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*" />
                 <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="0.5*" />
+                <ColumnDefinition Width="0.5*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
             </Grid.ColumnDefinitions>
+            
             <Grid.RowDefinitions>
                 <RowDefinition Height="0.2*" />
                 <RowDefinition Height="1.5*" />
-                <RowDefinition Height="3*" />
+                <RowDefinition Height="0.5*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
             </Grid.RowDefinitions>
             
+            <!--#region Main Elements? -->
             <Label
                 Grid.Row="0"
                 Grid.Column="0"
+                Grid.ColumnSpan="3"
                 Text="Decimal Here"
                 HorizontalOptions="Center"
                 TextColor="White"
@@ -30,31 +44,185 @@
             <Entry
                 Grid.Row="1"
                 Grid.Column="0"
+                Grid.ColumnSpan="3"
                 x:Name="HexToDec"
-                Keyboard="Numeric"
-                Placeholder="Type Here"
-                TextChanged="HexToDec_TextChanged"
+                HorizontalTextAlignment="Center"
                 VerticalOptions="FillAndExpand"
                 TextColor="White"
-                BackgroundColor="DarkGray"
+                BackgroundColor="DarkGreen"
+                IsReadOnly="True"
             />
             <Label
                 Grid.Row="0"
-                Grid.Column="1"
+                Grid.Column="3"
+                Grid.ColumnSpan="3"
                 Text="Hexadecimal Here"
                 HorizontalOptions="Center"
                 TextColor="White"
             />
             <Entry
                 Grid.Row="1"
-                Grid.Column="1"
+                Grid.Column="3"
+                Grid.ColumnSpan="3"
                 x:Name="DecToHex"
-                Placeholder="Type Here"
+                HorizontalTextAlignment="Center"
                 VerticalOptions="FillAndExpand"
                 TextColor="White"
-                TextChanged="DecToHex_TextChanged"
                 BackgroundColor="DarkGray"
+                IsReadOnly="True"
             />
+            <Button
+                Text="Hex To Dec -->"
+                Grid.Row="2"
+                Grid.ColumnSpan="6"
+                x:Name="SwitchButtonHex2Dec"
+            />
+            <!--#endregion-->
+            
+            <!--#region Keys Buttons Row 1 2 3 A B -->
+            <Button
+                x:Name="Button_1"
+                Grid.Row="3"
+                Grid.Column="0"
+                Grid.ColumnSpan="1"
+                Text="1"
+            />
+            <Button
+                x:Name="Button_2"
+                Grid.Row="3"
+                Grid.Column="1"
+                Grid.ColumnSpan="1"
+                Text="2"
+            />
+            <Button
+                x:Name="Button_3"
+                Grid.Row="3"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                Text="3"
+            />
+            <Button
+                x:Name="Button_A"
+                Grid.Row="3"
+                Grid.Column="4"
+                Grid.ColumnSpan="1"
+                Text="A"
+                TextColor="Red"
+            />
+            <Button
+                x:Name="Button_B"
+                Grid.Row="3"
+                Grid.Column="5"
+                Grid.ColumnSpan="1"
+                Text="B"
+                TextColor="Red"
+            />
+            <!--#endregion-->
+            
+            <!--#region Keys Buttons Row 4 5 6 C D -->    
+            <Button
+                x:Name="Button_4"
+                Grid.Row="4"
+                Grid.Column="0"
+                Grid.ColumnSpan="1"
+                Text="4"
+            />
+            <Button
+                x:Name="Button_5"
+                Grid.Row="4"
+                Grid.Column="1"
+                Grid.ColumnSpan="1"
+                Text="5"
+            />
+            <Button
+                x:Name="Button_6"
+                Grid.Row="4"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                Text="6"
+            />
+            <Button
+                x:Name="Button_C"
+                Grid.Row="4"
+                Grid.Column="4"
+                Grid.ColumnSpan="1"
+                Text="C"
+                TextColor="Red"
+            />
+            <Button
+                x:Name="Button_D"
+                Grid.Row="4"
+                Grid.Column="5"
+                Grid.ColumnSpan="1"
+                Text="D"
+                TextColor="Red"
+            />
+            <!--#endregion-->
+            
+            <!--#region Keys Buttons Row 7 8 9 E F -->
+            <Button
+                x:Name="Button_7"
+                Grid.Row="5"
+                Grid.Column="0"
+                Grid.ColumnSpan="1"
+                Text="7"
+            />
+            <Button
+                x:Name="Button_8"
+                Grid.Row="5"
+                Grid.Column="1"
+                Grid.ColumnSpan="1"
+                Text="8"
+            />
+            <Button
+                x:Name="Button_9"
+                Grid.Row="5"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                Text="9"
+            />
+            <Button
+                x:Name="Button_E"
+                Grid.Row="5"
+                Grid.Column="4"
+                Grid.ColumnSpan="1"
+                Text="E"
+                TextColor="Red"
+            />
+            <Button
+                x:Name="Button_F"
+                Grid.Row="5"
+                Grid.Column="5"
+                Grid.ColumnSpan="1"
+                Text="F"
+                TextColor="Red"
+            />
+            <!--#endregion-->
+            
+            <!--#region Keys Buttons Row 0 Clear Delete -->
+            <Button
+                x:Name="Button_0"
+                Grid.Row="6"
+                Grid.Column="0"
+                Grid.ColumnSpan="1"
+                Text="0"
+            />
+            <Button
+                x:Name="Button_Clear"
+                Grid.Row="6"
+                Grid.Column="1"
+                Grid.ColumnSpan="3"
+                Text="Clear"
+            />
+            <Button
+                x:Name="Button_Delete"
+                Grid.Row="6"
+                Grid.Column="4"
+                Grid.ColumnSpan="2"
+                Text="Delete"
+            />
+            <!--#endregion-->
+
         </Grid>
         
     </ContentPage.Content>

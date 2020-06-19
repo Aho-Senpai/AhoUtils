@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AhoUtils.Android", "AhoUtil
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AhoUtils.iOS", "AhoUtils.iOS\AhoUtils.iOS.csproj", "{04A1275F-01B0-407F-8E92-0E1FAAB138E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AhoUtils", "AhoUtils\AhoUtils.csproj", "{74158226-FFBF-446B-9AA3-F898CDE341F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AhoUtils", "AhoUtils\AhoUtils.csproj", "{74158226-FFBF-446B-9AA3-F898CDE341F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

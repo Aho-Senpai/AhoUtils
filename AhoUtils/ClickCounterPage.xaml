@@ -13,16 +13,13 @@
             <Button
                 x:Name="ClickCounterButton"
                 Text="Click Me!" 
-                Clicked="ClickCounterButton_Clicked"
                 VerticalOptions="FillAndExpand"
                 HorizontalOptions="Fill"
                 BackgroundColor="LightSeaGreen"
             />
-            
             <Button
                 x:Name="ClickCounterReset"
                 Text="Reset"
-                Clicked="ClickCounterReset_Clicked"
                 BackgroundColor="OrangeRed"
             />
 

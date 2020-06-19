@@ -20,7 +20,6 @@ namespace AhoUtils
             HexConverterButtonMainPage.Clicked += HexConverterButtonMainPage_Clicked;
         }
 
-
         async void ClickCounterButtonMainPage_Clicked(object sender, EventArgs e)
         {
             var CCPage = new ClickCounterPage();
