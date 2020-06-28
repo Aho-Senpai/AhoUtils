@@ -12,7 +12,7 @@ namespace AhoUtils
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ClickCounterPage : ContentPage
     {
-        int ClickCounter;
+        uint ClickCounter;
         public ClickCounterPage()
         {
             InitializeComponent();

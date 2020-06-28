@@ -7,9 +7,11 @@
              x:Class="AhoUtils.ClickCounterPage">
     
     <ContentPage.Content>
-        
-        <StackLayout>
 
+        <StackLayout
+            Spacing="0"
+        >
+            
             <Button
                 x:Name="ClickCounterButton"
                 Text="Click Me!" 

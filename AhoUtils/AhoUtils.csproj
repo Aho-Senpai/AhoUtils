@@ -21,6 +21,9 @@
     <Compile Update="ClickCounterPage.xaml.cs">
       <DependentUpon>ClickCounterPage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="StringSorterPage.xaml.cs">
+      <DependentUpon>StringSorterPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -28,6 +31,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="HexConverterPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="StringSorterPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

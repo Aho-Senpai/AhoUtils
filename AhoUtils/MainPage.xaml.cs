@@ -18,7 +18,9 @@ namespace AhoUtils
             InitializeComponent();
             ClickCounterButtonMainPage.Clicked += ClickCounterButtonMainPage_Clicked;
             HexConverterButtonMainPage.Clicked += HexConverterButtonMainPage_Clicked;
+            StringSorterButtonMainPage.Clicked += StringSorterButtonMainPage_Clicked;
         }
+
 
         async void ClickCounterButtonMainPage_Clicked(object sender, EventArgs e)
         {
@@ -29,6 +31,11 @@ namespace AhoUtils
         {
             var HCPage = new HexConverterPage();
             await Navigation.PushModalAsync(HCPage);
+        }
+        async void StringSorterButtonMainPage_Clicked(object sender, EventArgs e)
+        {
+            var SSPage = new StringSorterPage();
+            await Navigation.PushModalAsync(SSPage);
         }
     }
 }

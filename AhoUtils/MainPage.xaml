@@ -28,6 +28,7 @@
             Margin="10" 
         />
         <Button 
+            x:Name="StringSorterButtonMainPage"
             Text="String Sorter" 
             BackgroundColor="LightBlue" 
             Margin="10" 
