@@ -282,5 +282,9 @@ namespace AhoUtils
         }
         #endregion
 
+        private void HexToDec_Focused(object sender, FocusEventArgs e)
+        {
+
+        }
     }
 }

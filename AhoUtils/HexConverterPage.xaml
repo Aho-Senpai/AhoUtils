@@ -8,13 +8,10 @@
     x:Class="AhoUtils.HexConverterPage"
     BackgroundColor="Black"
 >
-    
     <ContentPage.Content>
-
         <Grid 
             Margin="5,5,5,5"
         >
-            
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*" />
                 <ColumnDefinition Width="1*" />
@@ -23,7 +20,6 @@
                 <ColumnDefinition Width="1*" />
                 <ColumnDefinition Width="1*" />
             </Grid.ColumnDefinitions>
-
             <Grid.RowDefinitions>
                 <RowDefinition Height="1.5*" />
                 <RowDefinition Height="0.5*" />
@@ -32,7 +28,6 @@
                 <RowDefinition Height="1*" />
                 <RowDefinition Height="1*" />
             </Grid.RowDefinitions>
-            
             <!--#region Main Elements? -->
             <Entry
                 Grid.Row="0"
@@ -63,7 +58,6 @@
                 x:Name="SwitchButtonHex2Dec"
             />
             <!--#endregion-->
-            
             <!--#region Keys Buttons Row 1 2 3 A B -->
             <Button
                 x:Name="Button_1"
@@ -103,8 +97,7 @@
                 TextColor="Red"
             />
             <!--#endregion-->
-            
-            <!--#region Keys Buttons Row 4 5 6 C D -->    
+            <!--#region Keys Buttons Row 4 5 6 C D -->
             <Button
                 x:Name="Button_4"
                 Grid.Row="3"
@@ -143,7 +136,6 @@
                 TextColor="Red"
             />
             <!--#endregion-->
-            
             <!--#region Keys Buttons Row 7 8 9 E F -->
             <Button
                 x:Name="Button_7"
@@ -183,7 +175,6 @@
                 TextColor="Red"
             />
             <!--#endregion-->
-            
             <!--#region Keys Buttons Row 0 Clear Delete -->
             <Button
                 x:Name="Button_0"
@@ -207,10 +198,7 @@
                 Text="Delete"
             />
             <!--#endregion-->
-
         </Grid>
-        
     </ContentPage.Content>
-    
 </ContentPage>
     

@@ -8,17 +8,16 @@
     x:Class="AhoUtils.StringSorterPage"
     BackgroundColor="Black"
 >
-    
     <ContentPage.Content>
-        
         <StackLayout>
-            
             <Entry
-                BackgroundColor="DarkBlue"
                 x:Name="StringEntry"
                 HeightRequest="100"
+                TextColor="White"
+                HorizontalTextAlignment="Center"
+                Placeholder="Insert Text Here!"
+                PlaceholderColor="DimGray"
             />
-
             <Button
                 Text="Sort()"
                 x:Name="SortButton"
@@ -26,9 +25,6 @@
             <Button
                 Text="Something"
             />
-
         </StackLayout>
-        
     </ContentPage.Content>
-    
 </ContentPage>

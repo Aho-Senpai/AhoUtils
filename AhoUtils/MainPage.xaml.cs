@@ -8,8 +8,6 @@ using Xamarin.Forms;
 
 namespace AhoUtils
 {
-    // Learn more about making custom code visible in the Xamarin.Forms previewer
-    // by visiting https://aka.ms/xamarinforms-previewer
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
@@ -19,8 +17,8 @@ namespace AhoUtils
             ClickCounterButtonMainPage.Clicked += ClickCounterButtonMainPage_Clicked;
             HexConverterButtonMainPage.Clicked += HexConverterButtonMainPage_Clicked;
             StringSorterButtonMainPage.Clicked += StringSorterButtonMainPage_Clicked;
+            TODOListPage.Clicked += TODOListPage_Clicked;
         }
-
 
         async void ClickCounterButtonMainPage_Clicked(object sender, EventArgs e)
         {
@@ -36,6 +34,11 @@ namespace AhoUtils
         {
             var SSPage = new StringSorterPage();
             await Navigation.PushModalAsync(SSPage);
+        }
+        async void TODOListPage_Clicked(object sender, EventArgs e)
+        {
+            var TDLPage = new TODOListPage();
+            await Navigation.PushModalAsync(TDLPage);
         }
     }
 }
