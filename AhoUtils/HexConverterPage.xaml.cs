@@ -48,7 +48,7 @@ namespace AhoUtils
             {
                 ConversionDirrection = false;
                 SwitchButtonHex2Dec.Text = "Dec <-- Hex";
-                DecToHex.BackgroundColor = Color.DarkGreen;
+                DecToHex.BackgroundColor = Color.DarkBlue;
                 HexToDec.BackgroundColor = Color.DarkGray;
                 Button_A.TextColor = Color.Black;
                 Button_B.TextColor = Color.Black;
@@ -61,7 +61,7 @@ namespace AhoUtils
             {
                 ConversionDirrection = true;
                 SwitchButtonHex2Dec.Text = "Dec --> Hex";
-                HexToDec.BackgroundColor = Color.DarkGreen;
+                HexToDec.BackgroundColor = Color.DarkBlue;
                 DecToHex.BackgroundColor = Color.DarkGray;
                 Button_A.TextColor = Color.Red;
                 Button_B.TextColor = Color.Red;

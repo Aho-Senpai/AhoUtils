@@ -37,7 +37,7 @@
                 HorizontalTextAlignment="Center"
                 VerticalOptions="FillAndExpand"
                 TextColor="White"
-                BackgroundColor="DarkGreen"
+                BackgroundColor="DarkBlue"
                 IsReadOnly="True"
             />
             <Entry
